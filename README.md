@@ -1,2 +1,3 @@
-# Tres-en-l-nia
-Aquest projecte té com a objectiu desenvolupar un tres en línia amb Java
+# Tres-en-linia
+Un projecte per a la creació de un tres en linia en java
+# Projecte creat per = Liyac Martinez \n Marc Sànchez 

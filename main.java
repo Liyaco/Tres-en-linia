@@ -4,9 +4,13 @@ public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
-        int menuv = 4 ;
+
         System.out.println("-------------------\n1-Nova partida    |\n-------------------\n2-Carregar partida|\n-------------------\n3-Configuració    |\n-------------------\n4-Sortir          |\n-------------------");
-        System.out.print("Selecciona l'opció que vols: ");menuv = sc.nextInt();
+        System.out.print("Selecciona l'opció que vols: ");
+
+        int menuv = 4 ;
+        menuv = sc.nextInt();
+
         switch (menuv){
             case 1:
                 System.out.println("Nova partida");

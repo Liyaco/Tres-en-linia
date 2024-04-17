@@ -7,7 +7,15 @@ public class main {
         int menuv = 4 ;
         boolean sortir = false;
         while(sortir == false) {
-            System.out.println("-------------------\n1-Nova partida    |\n-------------------\n2-Carregar partida|\n-------------------\n3-Configuració    |\n-------------------\n4-Sortir          |\n-------------------");
+            System.out.println("-------------------" +
+                                "\n1-Nova partida    |" +
+                                "\n-------------------\n" +
+                                "2-Carregar partida|\n" +
+                                "-------------------\n" +
+                                "3-Configuració    |\n" +
+                                "-------------------\n" +
+                                "4-Sortir          |\n" +
+                                "-------------------");
             System.out.print("Selecciona l'opció que vols: ");menuv = sc.nextInt();
             switch (menuv){
                 case 1:

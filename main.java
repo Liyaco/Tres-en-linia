@@ -4,7 +4,12 @@ public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
-        int menuv = 4 ;
+
+        menu_seleccion(sc);
+    }
+
+    private static void menu_seleccion(Scanner sc) {
+        int menuv = 4;
         boolean sortir = false;
         while(sortir == false) {
             System.out.println("-------------------" +
@@ -19,18 +24,30 @@ public class main {
             System.out.print("Selecciona l'opció que vols: ");menuv = sc.nextInt();
             switch (menuv){
                 case 1:
-                    System.out.println("Nova partida");
+                    novapartida();
                     break;
                 case 2:
-                    System.out.println("Carregar partida");
+                    carregarpartida();
                     break;
                 case 3:
-                    System.out.println("Configuració");
+                    configuracio();
                     break;
                 case 4:
                     sortir = true;
                     break;
             }
         }
+    }
+
+    private static void configuracio() {
+        System.out.println("Configuració");
+    }
+
+    private static void carregarpartida() {
+        System.out.println("Carregar partida");
+    }
+
+    private static void novapartida() {
+        System.out.println("Nova_partida");
     }
 }

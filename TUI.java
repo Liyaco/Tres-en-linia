@@ -21,14 +21,8 @@ public static void mostrarMenu(Scanner sc) {
         System.out.print("Selecciona l'opció que vols: ");
         menuv = sc.nextInt();
 
-        public static void mostrarTaulell () {
-            throw new NotImplementedException();
-        }
-        public static void recollirJugada () {
-            throw new NotImplementedException();
-        }
-        public static void diDePartida () {
-            throw new NotImplementedException();
-        }
+        public static void mostrarTaulell() {throw new NotImplementedException();}
+        public static void recollirJugada() {throw new NotImplementedException();}
+        public static void diDePartida() {throw new NotImplementedException();}
     }
 }

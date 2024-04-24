@@ -22,7 +22,6 @@ public class TUI {
 
         }
     }
-
     public static void mostrarTaulell() {throw new NotImplementedException();}
 
     public static void recollirJugada() {throw new NotImplementedException();}

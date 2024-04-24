@@ -1,3 +1,4 @@
+import jdk.jshell.spi.ExecutionControl;
 import java.util.Scanner;
 
 public class TUI {
@@ -22,10 +23,15 @@ public class TUI {
 
         }
     }
-    public static void mostrarTaulell() {throw new NotImplementedException();}
 
-    public static void recollirJugada() {throw new NotImplementedException();}
+    public static void mostrarTaulell() throws ExecutionControl.NotImplementedException {
+        throw new ExecutionControl.NotImplementedException("");
+    }
 
-    public static void diDePartida() {throw new NotImplementedException();}
-
+    public static void recollirJugada() throws ExecutionControl.NotImplementedException {
+        throw new ExecutionControl.NotImplementedException("");
+    }
+    public static void diDePartida() throws ExecutionControl.NotImplementedException {
+        throw new ExecutionControl.NotImplementedException("");
+    }
 }

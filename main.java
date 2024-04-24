@@ -18,6 +18,7 @@ public class main {
                                 "2-Carregar partida|\n" +
                                 "-------------------\n" +
                                 "3-Configuració    |\n" +
+
                                 "-------------------\n" +
                                 "4-Sortir          |\n" +
                                 "-------------------");

@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Joc{
     private short torn;
     public short getTorn() {

@@ -5,9 +5,6 @@ public class TUI {
     //atributs aqui
 
     public static void mostrarMenu(Scanner sc) {
-        int menuv = 4;
-        boolean sortir = false;
-        while (sortir == false) {
             System.out.println("-------------------" +
                     "\n1-Nova partida    |" +
                     "\n-------------------\n" +
@@ -19,8 +16,7 @@ public class TUI {
                     "4-Sortir          |\n" +
                     "-------------------");
             System.out.print("Selecciona l'opció que vols: ");
-            menuv = sc.nextInt();
-        }
+
     }
 
     public static void mostrarTaulell() throws ExecutionControl.NotImplementedException {

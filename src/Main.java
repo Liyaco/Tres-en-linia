@@ -6,7 +6,19 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
 
-        switch (menuv){
+        int menuv = 4;
+
+        boolean sortir = false;
+
+        TUI TUI = new TUI();
+
+        while (sortir == false){
+
+            TUI.mostrarMenu(sc);
+
+            menuv = sc.nextInt();
+
+        switch (menuv) {
             case 1:
                 novapartida();
                 break;
@@ -19,6 +31,7 @@ public class Main {
             case 4:
                 sortir = true;
                 break;
+            }
         }
     }
 

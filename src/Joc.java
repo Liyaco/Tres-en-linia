@@ -1,11 +1,11 @@
 import java.util.Arrays;
 
-public static class Joc{
+public class Joc{
     private short torn;
     public short getTorn() {
         return torn;
     }
-    private charArray
+
     public static void novaPartida() {
         throw new UnsupportedOperationException("Not Soported");
     }

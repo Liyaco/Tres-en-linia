@@ -20,7 +20,6 @@ public class TUI {
                     "-------------------");
             System.out.print("Selecciona l'opció que vols: ");
             menuv = sc.nextInt();
-
         }
     }
 

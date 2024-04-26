@@ -5,6 +5,7 @@ public class Joc{
     public short getTorn() {
         return torn;
     }
+    private char[] taulell;
 
     public static void novaPartida() {
         throw new UnsupportedOperationException("Not Soported");

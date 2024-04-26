@@ -7,10 +7,10 @@ public class Main {
         sc.useLocale(Locale.ENGLISH);
 
         int menuv = 4;
-
         boolean sortir = false;
 
-        TUI TUI = new TUI();
+        Joc joc = new Joc();
+        TUI tui = new TUI();
 
         while (sortir == false){
 

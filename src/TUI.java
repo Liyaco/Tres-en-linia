@@ -2,7 +2,7 @@ import jdk.jshell.spi.ExecutionControl;
 import java.util.Scanner;
 
 public class TUI {
-    //atributs aqui
+    private Scanner sc;
 
     public static void mostrarMenu(Scanner sc) {
             System.out.println("-------------------" +

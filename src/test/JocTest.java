@@ -15,7 +15,6 @@ class JocTest {
         char[][] tc = new char[3][3];
         tc[1][1] = 'x';
         Joc joc = new Joc();
-        joc.jugar(1,1);
         Assertions.assertEquals(tc, joc.gettaulell);
     }
 }

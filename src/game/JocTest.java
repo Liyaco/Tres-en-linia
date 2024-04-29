@@ -1,8 +1,6 @@
-package test;
+package game;
 
 import org.junit.jupiter.api.Assertions;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class JocTest {
 
@@ -12,9 +10,11 @@ class JocTest {
 
     @org.junit.jupiter.api.Test
     void primerturno() {
+        int x = 1;
+        int y = 1;
         char[][] tc = new char[3][3];
-        tc[1][1] = 'x';
+        tc[x][y] = 'x';
         Joc joc = new Joc();
-        Assertions.assertEquals(tc, joc.gettaulell);
+        Assertions.assertArrayEquals(tc, joc.getTaulell());
     }
 }

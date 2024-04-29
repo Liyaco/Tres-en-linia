@@ -1,3 +1,5 @@
+package game;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -42,7 +44,7 @@ public class Main {
         System.out.println("Carregar partida");
     }
 
-    private static void novapartida() { //Joc joc = new Joc()
+    private static void novapartida() { //game.Joc joc = new game.Joc();
         // ;
         System.out.println("Nova_partida");
     }

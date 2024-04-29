@@ -1,3 +1,5 @@
+package game;
+
 import jdk.jshell.spi.ExecutionControl;
 import java.util.Scanner;
 

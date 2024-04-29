@@ -1,3 +1,5 @@
+package game;
+
 public class Joc{
     private short torn;
     public short getTorn() {

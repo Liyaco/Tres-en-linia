@@ -16,4 +16,5 @@ class JocTest {
         short tornx = 0;
         Assertions.assertEquals(tornx, joc.getTorn);
     }
+
 }

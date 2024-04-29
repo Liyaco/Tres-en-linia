@@ -4,8 +4,8 @@ public class Joc{
         return torn;
     }
 
-    private char[] taulell;
-    public char[] getTaulell() {
+    private char[][] taulell;
+    public char[][] getTaulell() {
         return taulell;
     }
 

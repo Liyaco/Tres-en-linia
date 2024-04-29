@@ -9,7 +9,6 @@ public class Main {
         int menuv = 4;
         boolean sortir = false;
 
-        Joc joc = new Joc();
         TUI tui = new TUI();
 
         while (sortir == false){
@@ -43,7 +42,8 @@ public class Main {
         System.out.println("Carregar partida");
     }
 
-    private static void novapartida() {
+    private static void novapartida() { //Joc joc = new Joc()
+        // ;
         System.out.println("Nova_partida");
     }
 }

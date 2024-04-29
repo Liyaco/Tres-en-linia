@@ -3,6 +3,7 @@ public class Joc{
     public short getTorn() {
         return torn;
     }
+
     private char[] taulell;
     public char[] getTaulell() {
         return taulell;

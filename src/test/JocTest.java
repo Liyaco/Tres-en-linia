@@ -7,14 +7,15 @@ import static org.junit.jupiter.api.Assertions.*;
 class JocTest {
 
     @org.junit.jupiter.api.Test
-    void creaciondejuego() {
+    void creacion () {
     }
 
     @org.junit.jupiter.api.Test
     void primerturno() {
+        char[][] tc = new char[3][3];
+        tc[1][1] = 'x';
         Joc joc = new Joc();
-        short tornx = 0;
-        Assertions.assertEquals(tornx, joc.getTorn);
+        joc.jugar(1,1);
+        Assertions.assertEquals(tc, joc.gettaulell);
     }
-
 }

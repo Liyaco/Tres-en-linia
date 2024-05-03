@@ -1,5 +1,9 @@
+package game;
+
 import java.util.Locale;
 import java.util.Scanner;
+import game.Joc;
+import game.TUI;
 
 public class Main {
     public static void main(String[] args) {

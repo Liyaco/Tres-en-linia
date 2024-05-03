@@ -1,10 +1,13 @@
+package game;
+
 public class Joc{
     private short torn;
     public short getTorn() {
         return torn;
     }
-    private char[] taulell;
-    public char[] getTaulell() {
+
+    private char[][] taulell;
+    public char[][] getTaulell() {
         return taulell;
     }
 

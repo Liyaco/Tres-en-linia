@@ -20,10 +20,10 @@ public class Main {
 
         switch (menuv) {
             case 1:
-                novapartida();
+                novaPartida(joc);
                 break;
             case 2:
-                carregarpartida();
+                carregarPartida();
                 break;
             case 3:
                 configuracio();
@@ -39,11 +39,11 @@ public class Main {
         System.out.println("Configuració");
     }
 
-    private static void carregarpartida() {
+    private static void carregarPartida() {
         System.out.println("Carregar partida");
     }
 
-    private static void novapartida() {
-        System.out.println("Nova_partida");
+    private static void novaPartida(Joc joc) {
+        joc.novaPartida();
     }
 }

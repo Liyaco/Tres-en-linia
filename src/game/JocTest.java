@@ -1,11 +1,16 @@
 package game;
-
 import org.junit.jupiter.api.Assertions;
 
 class JocTest {
 
     @org.junit.jupiter.api.Test
     void creacion () {
+        String[][] taulell = {
+                {"|"," ","|"," ","|"," ","|"},
+                {"|"," ","|"," ","|"," ","|"},
+                {"|"," ","|"," ","|"," ","|"}
+        };
+
     }
 
     @org.junit.jupiter.api.Test

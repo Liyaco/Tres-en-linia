@@ -30,7 +30,7 @@ public class TUI {
         throw new ExecutionControl.NotImplementedException("");
     }
 
-    // El metode recollirJugada es l'encarregat de trobar la jugada guanyadora //
+    // El metode recollirJugada es l'encarregat de recullir les jugades //
     public static void recollirJugada() throws ExecutionControl.NotImplementedException {
         throw new ExecutionControl.NotImplementedException("");
     }

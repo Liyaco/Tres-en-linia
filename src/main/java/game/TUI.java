@@ -32,7 +32,7 @@ public class TUI {
     // El metode mostrarTaulell es l'encarregat de mostrar el taulell de joc //
     public static void mostrarTaulell(Joc jc){
         jc.getTaulell();
-        jc.jugar();
+        Joc.jugar();
     }
 
     // El metode recollirJugada es l'encarregat de recullir les jugades //

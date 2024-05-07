@@ -22,11 +22,47 @@ public class Joc{
 
     // El metode jugar es l'encarregat de fer correr el joc //
     public static void jugar() {
-        ;
+
     }
 
     // El metode jugadaGuanyadora es l'encarregat de trobar la jugada guanyadora //
     public static void jugadaGuanyadora() {
         throw new UnsupportedOperationException("Not Soported");
+        //boolean iguals = false;
+
+        //int contador = 0;
+
+        //for(int j = 0; j < 3; j++) {
+        //iguals = true;
+
+        //for (int i = 1; i < 3; i++) {
+        //char anterior = taulell[i - 1][j];
+        //char actual = taulell[i][j];
+
+        //if (anterior != actual) {
+        //iguals = false;
+        //contador++;
+        //break;
+        //}
+        //}
+        //}
+        //boolean iguals = false;
+
+        //int contador = 0;
+
+        //for(int j = 0; j < 3; j++) {
+        //iguals = true;
+
+        //for (int i = 1; i < 3; i++) {
+        //char anterior = taulell[i][j - 1];
+        //char actual = taulell[i][j];
+
+        //if (anterior != actual) {
+        //iguals = false;
+        //contador++;
+        //break;
+        //}
+        //}
+        //}
     }
 }

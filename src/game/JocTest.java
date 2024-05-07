@@ -15,11 +15,12 @@ class JocTest {
 
     @org.junit.jupiter.api.Test
     void primerturno() {
-        int x = 0;
-        int y = 0;
-        char[][] tc = new char[3][3];
-        tc[x][y] = 'x';
+        char[][] taulell = {
+                {'#','O','#'},
+                {'#','#','#'},
+                {'#','#','#'}
+        };
         Joc joc = new Joc();
-        Assertions.assertArrayEquals(tc, joc.getTaulell());
+        Assertions.assertArrayEquals(taulell, joc.getTaulell());
     }
 }

@@ -103,5 +103,7 @@ public class Joc{
         //}
         //}
         //}
+
+        //TUI.fiDePartida();
     }
 }

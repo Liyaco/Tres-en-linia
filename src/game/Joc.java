@@ -46,6 +46,7 @@ public class Joc{
         //}
         //}
         //}
+
         //boolean iguals = false;
 
         //int contador = 0;
@@ -56,6 +57,44 @@ public class Joc{
         //for (int i = 1; i < 3; i++) {
         //char anterior = taulell[i][j - 1];
         //char actual = taulell[i][j];
+
+        //if (anterior != actual) {
+        //iguals = false;
+        //contador++;
+        //break;
+        //}
+        //}
+        //}
+
+        //boolean iguals = false;
+
+        //int contador = 0;
+
+        //for(int j = 0; j < 3; j++) {
+        //iguals = true;
+
+        //for (int i = 1; i < 3; i++) {
+        //char anterior = taulell[i + 1][j + 1];
+        //char actual = taulell[i][j];
+
+        //if (anterior != actual) {
+        //iguals = false;
+        //contador++;
+        //break;
+        //}
+        //}
+        //}
+
+        //boolean iguals = false;
+
+        //int contador = 0;
+
+        //for(int j = 0; j < 3; j++) {
+        //iguals = true;
+
+        //for (int i = 1; i < 3; i++) {
+        //char anterior = taulell[i - 1][j - 1];
+        //char actual = taulell[3][j];
 
         //if (anterior != actual) {
         //iguals = false;

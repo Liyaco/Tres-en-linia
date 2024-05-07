@@ -8,13 +8,20 @@ public class Joc{
         return torn;
     }
 
+    // Creacio de un array, sera el taulell //
+    private char[][] taulell;
+    public char[][] getTaulell() {
+        return taulell;
+    }
+
     // El metode novaPartida es l'encarregat de crear una nova partida //
     public static void novaPartida() {
+
     }
 
     // El metode jugar es l'encarregat de fer correr el joc //
     public static void jugar() {
-
+        throw new UnsupportedOperationException("Not Soported");
     }
 
     // El metode jugadaGuanyadora es l'encarregat de trobar la jugada guanyadora //

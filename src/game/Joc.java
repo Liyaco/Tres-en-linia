@@ -16,7 +16,9 @@ public class Joc{
 
     // El metode novaPartida es l'encarregat de crear una nova partida //
     public static void novaPartida() {
+        for(int i = 0; i<3;i++){
 
+        }
     }
 
     // El metode jugar es l'encarregat de fer correr el joc //

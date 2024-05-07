@@ -11,7 +11,7 @@ class JocTest {
                 {'#','#','#'},
                 {'#','#','#'}
         };
-        Assertions.assertEquals(taulell, );
+        Assertions.assertEquals(taulell, joc.getTaulell());
 
     }
 

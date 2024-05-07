@@ -9,6 +9,10 @@ import java.util.Scanner;
 public class TUI {
     private Scanner sc;
 
+    public TUI(Scanner sc) {
+        this.sc = sc;
+    }
+
     // El metode mostrarMenu es l'encarregat de mostrar el menu del joc //
     public static void mostrarMenu(Scanner sc) {
             System.out.println("-------------------" +

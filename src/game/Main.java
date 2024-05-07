@@ -18,7 +18,7 @@ public class Main {
         boolean sortir = false;
 
         Joc joc = new Joc();
-        TUI tui = new TUI();
+        TUI tui = new TUI(sc);
 
         while (sortir == false){
 
@@ -45,7 +45,11 @@ public class Main {
 
     // El metode configuracio es l'encarregat de mostrar la configuracio i poder editarla //
     private static void configuracio() {
-        System.out.println("Configuració");
+        int confmenu = 0;
+        System.out.println("1.");
+        switch (confmenu){
+            case 1:
+        }
     }
 
     // El metode carregarPartida es l'encarregat de carregar una partida ja existent //

@@ -4,26 +4,25 @@ package game;
 // La clase Joc //
 public class Joc{
     private short torn;
-    public short getTorn() {
-        return torn;
-    }
+    public short getTorn() {return torn;}
 
     // Creacio de un array, sera el taulell //
     private char[][] taulell;
-    public char[][] getTaulell() {
-        return taulell;
-    }
+    public char[][] getTaulell() {return taulell;}
 
     // El metode novaPartida es l'encarregat de crear una nova partida //
-    public static void novaPartida() {
+    public void novaPartida() {
+        this.taulell = new char[3][3];
         for(int i = 0; i<3;i++){
-
+            for(int j = 0; j<3;j++) {
+                this.taulell[i][j] = '#';
+            }
         }
     }
 
     // El metode jugar es l'encarregat de fer correr el joc //
     public static void jugar() {
-        throw new UnsupportedOperationException("Not Soported");
+        ;
     }
 
     // El metode jugadaGuanyadora es l'encarregat de trobar la jugada guanyadora //

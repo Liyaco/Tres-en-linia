@@ -6,12 +6,13 @@ class JocTest {
     @org.junit.jupiter.api.Test
     void creacion () {
         Joc joc = new Joc();
+        joc.novaPartida();
         char[][] taulell = {
                 {'#','#','#'},
                 {'#','#','#'},
                 {'#','#','#'}
         };
-        Assertions.assertEquals(taulell, joc.getTaulell());
+        Assertions.assertArrayEquals(taulell, joc.getTaulell());
 
     }
 

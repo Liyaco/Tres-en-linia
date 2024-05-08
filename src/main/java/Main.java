@@ -16,18 +16,18 @@ public class Main {
 
         while (sortir == false){
 
-            int menuv = TUI.mostrarMenu(sc);
+            int menuv = tui.mostrarMenu();
 
 
         switch (menuv) {
             case 1:
-                novaPartida(joc);
+                joc.novaPartida();
                 break;
             case 2:
                 carregarPartida();
                 break;
             case 3:
-                configuracio();
+                tui.configuracio();
                 break;
             case 4:
                 sortir = true;
@@ -37,19 +37,6 @@ public class Main {
     }
 
     // El metode configuracio es l'encarregat de mostrar la configuracio i poder editarla //
-    private static void configuracio() {
-        int confmenu = 0;
-        System.out.println("|1.X en raya" +
-                           "|2.Sotir al menú");
-        switch (confmenu){
-            case 1:
-                System.out.println("seleccióna un numero");
-                break;
-            case 2:
-                System.out.println("Sortint...");
-                break;
-        }
-        }
 
     // El metode carregarPartida es l'encarregat de carregar una partida ja existent //
     private static void carregarPartida() {

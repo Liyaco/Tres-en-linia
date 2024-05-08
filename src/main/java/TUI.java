@@ -11,7 +11,7 @@ public class TUI {
     }
 
     // El metode mostrarMenu es l'encarregat de mostrar el menu del joc //
-    public static int mostrarMenu(Scanner sc) {
+    public int mostrarMenu() {
             int menuv = 4;
             System.out.println("-------------------" +
                     "\n1-Nova partida    |" +
@@ -29,9 +29,8 @@ public class TUI {
     }
 
     // El metode mostrarTaulell es l'encarregat de mostrar el taulell de joc //
-    public static void mostrarTaulell(Joc jc){
-        jc.getTaulell();
-        Joc.jugar();
+    public static void mostrarTaulell(){
+        System.out.println("Mondongo");
     }
 
     // El metode recollirJugada es l'encarregat de recullir les jugades //
@@ -43,4 +42,18 @@ public class TUI {
     public static void fiDePartida(){
         System.out.println("1-Volver a jugar \n 2-Sortir");
     }
+
+    public void configuracio() {
+        System.out.println("|1.X en raya" +
+                "|2.Sotir al menú");
+        int confmenu = sc.nextInt();
+        switch (confmenu){
+            case 1:
+                System.out.println("seleccióna un numero");
+                break;
+            case 2:
+                System.out.println("Sortint...");
+                break;
+        }
+}
 }

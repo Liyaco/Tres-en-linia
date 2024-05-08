@@ -8,4 +8,7 @@ Avui dia 8 he comprovat que la classe Main, el main no hi funciona, dona el seg√
 
 #### Caused by: java.lang.ClassNotFoundException: Main
 
+
+## SOLUCIONAT
+El problema hi era al JocTest ja que hi habia fet un test pero no hi tenian terminat el metode amb el que s'hi tindria que testear.
 # Projecte creat per: Liyac Martinez/Marc S√†nchez

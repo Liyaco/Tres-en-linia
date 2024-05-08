@@ -1,5 +1,8 @@
-package game;
+import game.Joc;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
 
 class JocTest {
 
@@ -17,9 +20,10 @@ class JocTest {
     }
 
     @org.junit.jupiter.api.Test
+    @CsvSource({"1,1", "2,1","3,2"})
     void primerturno() {
         char[][] taulell = {
-                {'#','O','#'},
+                {'#','#','#'},
                 {'#','#','#'},
                 {'#','#','#'}
         };

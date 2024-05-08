@@ -20,8 +20,13 @@ public class Joc{
     }
 
     // El metode jugar es l'encarregat de fer correr el joc //
-    public static void jugar() {
-
+    public void jugar(char cordx, char cordy) {
+        if (this.torn%2 == 1){
+            this.taulell[cordx][cordy] = 'o';
+        }
+        else {
+            this.taulell[cordx][cordy] = 'x';
+        }
     }
 
     // El metode jugadaGuanyadora es l'encarregat de trobar la jugada guanyadora //

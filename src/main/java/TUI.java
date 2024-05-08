@@ -4,11 +4,7 @@ import java.util.Scanner;
 
 // La clase TUI //
 public class TUI {
-    private Scanner sc;
-
-    public TUI(Scanner sc) {
-        this.sc = sc;
-    }
+    Scanner sc = new Scanner(System.in);
 
     // El metode mostrarMenu es l'encarregat de mostrar el menu del joc //
     public int mostrarMenu() {
@@ -44,7 +40,7 @@ public class TUI {
     }
 
     public void configuracio() {
-        System.out.println("|1.X en raya" +
+        System.out.println("|1.X en raya \n" +
                 "|2.Sotir al menú");
         int confmenu = sc.nextInt();
         switch (confmenu){

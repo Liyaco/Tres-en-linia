@@ -5,14 +5,11 @@ import java.util.Scanner;
 // La clase Main //
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        sc.useLocale(Locale.ENGLISH);
 
         // Aqui esta el switch i els seus atributs per poder funcionar, tambe crida al metode mostrar menu //
         boolean sortir = false;
-
         Joc joc = new Joc();
-        TUI tui = new TUI(sc);
+        TUI tui = new TUI();
 
         while (sortir == false){
 

@@ -40,10 +40,16 @@ public class Joc{
         //char anterior = taulell[i - 1][j];
         //char actual = taulell[i][j];
 
-        //if (anterior != actual) {
+        //if (actual == "#"){
+            //iguals = false;
+            //break;
+        //}
+        //else
+            //if (anterior != actual) {
         //iguals = false;
         //contador++;
         //break;
+        //}
         //}
         //}
         //}
@@ -59,13 +65,7 @@ public class Joc{
         //char anterior = taulell[i][j - 1];
         //char actual = taulell[i][j];
 
-        //if (anterior != actual) {
-        //iguals = false;
-        //contador++;
-        //break;
-        //}
-        //}
-        //}
+
 
         //boolean iguals = false;
 
@@ -78,13 +78,7 @@ public class Joc{
         //char anterior = taulell[i + 1][j + 1];
         //char actual = taulell[i][j];
 
-        //if (anterior != actual) {
-        //iguals = false;
-        //contador++;
-        //break;
-        //}
-        //}
-        //}
+
 
         //boolean iguals = false;
 
@@ -97,13 +91,7 @@ public class Joc{
         //char anterior = taulell[i - 1][j - 1];
         //char actual = taulell[3][j];
 
-        //if (anterior != actual) {
-        //iguals = false;
-        //contador++;
-        //break;
-        //}
-        //}
-        //}
+
 
         //if (jugador == 1)
             //jugador++;

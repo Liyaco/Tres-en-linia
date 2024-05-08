@@ -39,7 +39,16 @@ public class Main {
     // El metode configuracio es l'encarregat de mostrar la configuracio i poder editarla //
     private static void configuracio() {
         int confmenu = 0;
-        System.out.println("1.");
+        System.out.println("|1.X en raya" +
+                           "|2.Sotir al menú");
+        switch (confmenu){
+            case 1:
+                System.out.println("seleccióna un numero");
+                break;
+            case 2:
+                System.out.println("Sortint...");
+                break;
+        }
         }
 
     // El metode carregarPartida es l'encarregat de carregar una partida ja existent //

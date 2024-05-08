@@ -30,6 +30,8 @@ public class Joc{
         throw new UnsupportedOperationException("Not Soported");
         //boolean iguals = false;
 
+        //int jugador = 1;
+
         //int contador = 0;
 
         //for(int j = 0; j < 3; j++) {
@@ -103,6 +105,13 @@ public class Joc{
         //}
         //}
         //}
+
+        //if (jugador == 1)
+            //jugador++;
+
+        //else (jugador == 2)
+                //jugador--;
+
 
         //if (iguals == true)
             //TUI.fiDePartida();

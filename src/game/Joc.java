@@ -104,6 +104,10 @@ public class Joc{
         //}
         //}
 
-        //TUI.fiDePartida();
+        //if (iguals == true)
+            //TUI.fiDePartida();
+
+        //else
+            //Joc.jugar();
     }
 }

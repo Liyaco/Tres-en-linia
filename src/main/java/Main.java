@@ -1,11 +1,6 @@
-// Creacio del package game per a poder utilitzar els metodes fora de la clase //
-package game;
-
 // Importacio de paquets //
 import java.util.Locale;
 import java.util.Scanner;
-import game.Joc;
-import game.TUI;
 
 // La clase Main //
 public class Main {
@@ -14,7 +9,6 @@ public class Main {
         sc.useLocale(Locale.ENGLISH);
 
         // Aqui esta el switch i els seus atributs per poder funcionar, tambe crida al metode mostrar menu //
-        int menuv = 4;
         boolean sortir = false;
 
         Joc joc = new Joc();
@@ -22,9 +16,8 @@ public class Main {
 
         while (sortir == false){
 
-            TUI.mostrarMenu(sc);
+            int menuv = TUI.mostrarMenu(sc);
 
-            menuv = sc.nextInt();
 
         switch (menuv) {
             case 1:
@@ -47,10 +40,7 @@ public class Main {
     private static void configuracio() {
         int confmenu = 0;
         System.out.println("1.");
-        switch (confmenu){
-            case 1:
         }
-    }
 
     // El metode carregarPartida es l'encarregat de carregar una partida ja existent //
     private static void carregarPartida() {

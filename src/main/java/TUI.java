@@ -1,6 +1,3 @@
-// Creacio del package game per a poder utilitzar els metodes fora de la clase //
-package game;
-
 // Importacio de paquets //
 import jdk.jshell.spi.ExecutionControl;
 import java.util.Scanner;
@@ -14,7 +11,8 @@ public class TUI {
     }
 
     // El metode mostrarMenu es l'encarregat de mostrar el menu del joc //
-    public static void mostrarMenu(Scanner sc) {
+    public static int mostrarMenu(Scanner sc) {
+            int menuv = 4;
             System.out.println("-------------------" +
                     "\n1-Nova partida    |" +
                     "\n-------------------\n" +
@@ -26,7 +24,8 @@ public class TUI {
                     "4-Sortir          |\n" +
                     "-------------------");
             System.out.print("Selecciona l'opció que vols: ");
-
+            menuv = sc.nextInt();
+            return menuv;
     }
 
     // El metode mostrarTaulell es l'encarregat de mostrar el taulell de joc //

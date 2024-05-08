@@ -1,6 +1,3 @@
-// Creacio del package game per a poder utilitzar els metodes fora de la clase //
-package game;
-
 // La clase Joc //
 public class Joc{
     private short torn;
@@ -10,7 +7,8 @@ public class Joc{
     private char[][] taulell;
     public char[][] getTaulell() {return taulell;}
 
-    // El metode novaPartida es l'encarregat de crear una nova partida //
+    // El metode novaPartida es l'encarregat de crear una nova partida: //
+    // Comença per crear el taulell sobre el atribut taulell de la clase creant-ho. //
     public void novaPartida() {
         this.taulell = new char[3][3];
         for(int i = 0; i<3;i++){
@@ -18,6 +16,7 @@ public class Joc{
                 this.taulell[i][j] = '#';
             }
         }
+        this.torn = 1;
     }
 
     // El metode jugar es l'encarregat de fer correr el joc //

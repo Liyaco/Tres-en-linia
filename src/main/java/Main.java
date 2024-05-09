@@ -19,6 +19,7 @@ public class Main {
         switch (menuv) {
             case 1:
                 joc.novaPartida();
+                play_game(joc, tui);
                 break;
             case 2:
                 carregarPartida();
@@ -29,19 +30,26 @@ public class Main {
             case 4:
                 sortir = true;
                 break;
-            }
+            default:
+                throw new IllegalStateException("No si esperaba el valor:" + menuv);
+        }
         }
     }
 
-    // El metode configuracio es l'encarregat de mostrar la configuracio i poder editarla //
+    private static void play_game(Joc joc, TUI tui){
+        boolean coordscorrect;
+        boolean guanyador = false;
+        while (guanyador == false){
+            do {
+                coordscorrect = joc.jugar((short) tui.recollirJugada(), (short) tui.recollirJugada());
+            }
+            while (coordscorrect);
+            joc.jugadaGuanyadora();
+        }
+    }
 
     // El metode carregarPartida es l'encarregat de carregar una partida ja existent //
     private static void carregarPartida() {
         System.out.println("Carregar partida");
-    }
-
-    // El metode novaPartida es l'encarregat de crear la partida //
-    private static void novaPartida(Joc joc) {
-        joc.novaPartida();
     }
 }

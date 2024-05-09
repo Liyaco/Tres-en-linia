@@ -30,8 +30,9 @@ public class TUI {
     }
 
     // El metode recollirJugada es l'encarregat de recullir les jugades //
-    public static void recollirJugada() throws ExecutionControl.NotImplementedException {
-        throw new ExecutionControl.NotImplementedException("");
+    public int recollirJugada() {
+        System.out.print("Cord:");
+        return sc.nextShort();
     }
 
     // El metode fiDePartida es l'encarregat de acabar la partida quan es guanya //

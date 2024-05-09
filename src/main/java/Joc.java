@@ -20,12 +20,20 @@ public class Joc{
     }
 
     // El metode jugar es l'encarregat de fer correr el joc //
-    public void jugar(char cordx, char cordy) {
-        if (this.torn%2 == 1){
-            this.taulell[cordx][cordy] = 'o';
+    public boolean jugar(short cordx, short cordy) {
+        // Al Main hi farem us d'un iterant per a capacitar el codi recollir unes altres coordenades on es pogui jugar
+        if (this.taulell[cordx][cordy] == '#'){
+            if (this.torn%2 == 1){
+                this.taulell[cordx][cordy] = 'o';
+            }
+            else {
+                this.taulell[cordx][cordy] = 'x';
+            }
+            this.torn++;
+            return true;
         }
         else {
-            this.taulell[cordx][cordy] = 'x';
+            return false;
         }
     }
 

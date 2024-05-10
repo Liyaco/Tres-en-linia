@@ -1,7 +1,3 @@
-// Importacio de paquets //
-import java.util.Locale;
-import java.util.Scanner;
-
 // La clase Main //
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +7,7 @@ public class Main {
         Joc joc = new Joc();
         TUI tui = new TUI();
 
-        while (sortir == false){
+        while (!sortir){
 
             int menuv = tui.mostrarMenu();
 
@@ -39,12 +35,14 @@ public class Main {
     private static void play_game(Joc joc, TUI tui){
         boolean coordscorrect;
         boolean guanyador = false;
-        while (guanyador == false){
+        while (!guanyador){
             do {
+                TUI.mostrarTaulell(joc);
                 coordscorrect = joc.jugar((short) tui.recollirJugada(), (short) tui.recollirJugada());
+                //Joc.jugadaGuanyadora();
             }
             while (coordscorrect);
-            joc.jugadaGuanyadora();
+
         }
     }
 

@@ -29,20 +29,21 @@ public class Joc {
     public boolean jugar(short cordx, short cordy) {
         // Al Main hi farem us d'un iterant per a capacitar el codi recollir unes altres coordenades on es pogui jugar
         if (this.taulell[cordx][cordy] == '#') {
-            if (this.torn % 2 == 1) {
-                this.taulell[cordx][cordy] = 'o';
-            } else {
-                this.taulell[cordx][cordy] = 'x';
+            if (cordx < 3 && cordy < 3) {
+                if (this.torn % 2 == 1) {
+                    this.taulell[cordx][cordy] = 'o';
+                } else {
+                    this.taulell[cordx][cordy] = 'x';
+                }
+                this.torn++;
+                return true;
             }
-            this.torn++;
-            return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     // El metode jugadaGuanyadora es l'encarregat de trobar la jugada guanyadora //
-    public void jugadaGuanyadora(char anterior, char actual, boolean iguals, int jugador, int contador) {
+    public boolean jugadaGuanyadora(char anterior, char actual, boolean iguals, int jugador, int contador) {
 
         iguals = false;
 
@@ -143,7 +144,7 @@ public class Joc {
         }
 
         else {
-            jugar;
+            jugar();
         }
     }
 }

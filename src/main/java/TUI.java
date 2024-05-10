@@ -1,5 +1,7 @@
 // Importacio de paquets //
 import jdk.jshell.spi.ExecutionControl;
+
+import java.util.Arrays;
 import java.util.Scanner;
 
 // La clase TUI //
@@ -25,8 +27,8 @@ public class TUI {
     }
 
     // El metode mostrarTaulell es l'encarregat de mostrar el taulell de joc //
-    public static void mostrarTaulell(){
-        System.out.println("Mondongo");
+    public static void mostrarTaulell(Joc joc){
+        System.out.println(Arrays.deepToString(joc.getTaulell()));
     }
 
     // El metode recollirJugada es l'encarregat de recullir les jugades //

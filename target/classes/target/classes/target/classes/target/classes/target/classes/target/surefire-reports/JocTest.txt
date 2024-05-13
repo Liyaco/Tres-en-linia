@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: JocTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! - in JocTest
-jugada{short, short}  Time elapsed: 0.009 s  <<< ERROR!
-org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [short arg0] in method [void JocTest.jugada(short,short)].
-

@@ -25,7 +25,11 @@ public class TUI {
 
     // El metode mostrarTaulell es l'encarregat de mostrar el taulell de joc //
     public static void mostrarTaulell(Joc joc){
-        System.out.println(Arrays.deepToString(joc.getTaulell()));
+        for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 3; j++){
+
+            }
+        }
     }
 
     // El metode recollirJugada es l'encarregat de recullir les jugades //

@@ -43,7 +43,7 @@ public class Joc {
     }
 
     // El metode jugadaGuanyadora es l'encarregat de trobar la jugada guanyadora //
-    public boolean jugadaGuanyadora(char anterior, char actual, boolean iguals, int jugador, int contador) {
+    public void jugadaGuanyadora(char anterior, char actual, boolean iguals, int jugador, int contador) {
 
         iguals = false;
 
@@ -144,7 +144,7 @@ public class Joc {
         }
 
         else {
-            jugar();
+            //jugar();
         }
     }
 }

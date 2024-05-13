@@ -18,6 +18,19 @@ class JocTest {
         };
         Assertions.assertArrayEquals(taulell, joc.getTaulell());
     }
+
+    @Test
+    void nocreacion() {
+        Joc joc = new Joc();
+        joc.novaPartida();
+        char[][] taulell = {
+                {' ',' ',' '},
+                {' ',' ',' '},
+                {' ',' ',' '}
+        };
+        Assertions.assertNotEquals(taulell, joc.getTaulell());
+    }
+
     @ParameterizedTest
     @CsvSource(
             {"0,0",

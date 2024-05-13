@@ -1,6 +1,3 @@
-// Importacio de paquets //
-import jdk.jshell.spi.ExecutionControl;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -33,8 +30,8 @@ public class TUI {
 
     // El metode recollirJugada es l'encarregat de recullir les jugades //
     public int recollirJugada() {
-        System.out.print("Cord:");
-        return sc.nextShort();
+        System.out.print("Cord (puedes usar 1,2,3):");
+        return (sc.nextShort() - 1 ) ;
     }
 
     // El metode fiDePartida es l'encarregat de acabar la partida quan es guanya //

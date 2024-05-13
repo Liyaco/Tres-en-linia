@@ -31,7 +31,7 @@ public class Main {
         }
         }
     }
-
+    // play game es usa per a poder trucar desde el main els diferents metodes de Joc i TUI
     private static void play_game(Joc joc, TUI tui){
         boolean coordscorrect;
         boolean guanyador = false;

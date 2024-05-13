@@ -43,108 +43,94 @@ public class Joc {
     }
 
     // El metode jugadaGuanyadora es l'encarregat de trobar la jugada guanyadora //
-    public void jugadaGuanyadora(char anterior, char actual, boolean iguals, int jugador, int contador) {
+    public int jugadaGuanyadora(char anterior, char actual, int guanyador, int jugador, int contador) {
 
-        iguals = false;
+        guanyador = 2;
 
         jugador = 1;
 
         contador = 0;
 
-        for(int j = 0; j < 3; j++) {
+        for (int j = 0; j < 3; j++) {
             for (int i = 1; i < 3; i++) {
                 anterior = this.taulell[i - 1][j];
                 actual = this.taulell[i][j];
                 if (actual == '#') {
                     break;
-                }
-                else if (anterior != actual) {
+                } else if (anterior != actual) {
                     contador++;
                     break;
-                }
-                else {
-                    iguals = true;
+                } else {
+                    guanyador = 1;
                 }
             }
         }
 
-        iguals = false;
+        guanyador = 2;
 
         contador = 0;
 
-        for(int j = 1; j < 3; j++) {
+        for (int j = 1; j < 3; j++) {
             for (int i = 0; i < 3; i++) {
                 anterior = this.taulell[i][j - 1];
                 actual = this.taulell[i][j];
                 if (actual == '#') {
                     break;
-                }
-                else if (anterior != actual) {
+                } else if (anterior != actual) {
                     contador++;
                     break;
-                }
-                else {
-                    iguals = true;
+                } else {
+                    guanyador = 1;
                 }
             }
         }
 
-        iguals = false;
+        guanyador = 2;
 
         contador = 0;
 
-        for(int j = 0; j < 3; j++) {
+        for (int j = 0; j < 3; j++) {
             for (int i = 0; i < 3; i++) {
                 anterior = this.taulell[i + 1][j + 1];
                 actual = this.taulell[i][j];
                 if (actual == '#') {
                     break;
-                }
-                else if (anterior != actual) {
+                } else if (anterior != actual) {
                     contador++;
                     break;
-                }
-                else {
-                    iguals = true;
+                } else {
+                    guanyador = 1;
                 }
             }
         }
 
-        iguals = false;
+        guanyador = 2;
 
         contador = 0;
 
-        for(int j = 2; j < 3; j++) {
+        for (int j = 2; j < 3; j++) {
             for (int i = 2; i < 3; i++) {
                 anterior = this.taulell[i - 1][j - 1];
                 actual = this.taulell[i][j];
                 if (actual == '#') {
                     break;
-                }
-                else if (anterior != actual) {
+                } else if (anterior != actual) {
                     contador++;
                     break;
-                }
-                else {
-                    iguals = true;
+                } else {
+                    guanyador = 1;
                 }
             }
         }
 
-        if (jugador == 1) {
-            jugador++;
+        if (guanyador == 1) {
+            return 1;
         }
-
+        //else if (guanyador == 2){
+            //return 2;
+        //}
         else {
-            jugador--;
-        }
-
-        if (iguals == true) {
-            TUI.fiDePartida();
-        }
-
-        else {
-            //jugar();
+            return 0;
         }
     }
 }

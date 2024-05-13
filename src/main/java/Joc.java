@@ -66,71 +66,80 @@ public class Joc {
             }
         }
 
-        guanyador = 2;
+        if (guanyador != 1) {
 
-        contador = 0;
+            guanyador = 2;
 
-        for (int j = 1; j < 3; j++) {
-            for (int i = 0; i < 3; i++) {
-                anterior = this.taulell[i][j - 1];
-                actual = this.taulell[i][j];
-                if (actual == '#') {
-                    break;
-                } else if (anterior != actual) {
-                    contador++;
-                    break;
-                } else {
-                    guanyador = 1;
+            contador = 0;
+
+            for (int j = 1; j < 3; j++) {
+                for (int i = 0; i < 3; i++) {
+                    anterior = this.taulell[i][j - 1];
+                    actual = this.taulell[i][j];
+                    if (actual == '#') {
+                        break;
+                    } else if (anterior != actual) {
+                        contador++;
+                        break;
+                    } else {
+                        guanyador = 1;
+                    }
                 }
             }
-        }
 
-        guanyador = 2;
+            if (guanyador != 1) {
 
-        contador = 0;
+                guanyador = 2;
 
-        for (int j = 0; j < 3; j++) {
-            for (int i = 0; i < 3; i++) {
-                anterior = this.taulell[i + 1][j + 1];
-                actual = this.taulell[i][j];
-                if (actual == '#') {
-                    break;
-                } else if (anterior != actual) {
-                    contador++;
-                    break;
-                } else {
-                    guanyador = 1;
+                contador = 0;
+
+                for (int j = 0; j < 3; j++) {
+                    for (int i = 0; i < 3; i++) {
+                        anterior = this.taulell[i + 1][j + 1];
+                        actual = this.taulell[i][j];
+                        if (actual == '#') {
+                            break;
+                        } else if (anterior != actual) {
+                            contador++;
+                            break;
+                        } else {
+                            guanyador = 1;
+                        }
+                    }
                 }
-            }
-        }
 
-        guanyador = 2;
+                if (guanyador != 1) {
 
-        contador = 0;
+                    guanyador = 2;
 
-        for (int j = 2; j < 3; j++) {
-            for (int i = 2; i < 3; i++) {
-                anterior = this.taulell[i - 1][j - 1];
-                actual = this.taulell[i][j];
-                if (actual == '#') {
-                    break;
-                } else if (anterior != actual) {
-                    contador++;
-                    break;
-                } else {
-                    guanyador = 1;
+                    contador = 0;
+
+                    for (int j = 2; j < 3; j++) {
+                        for (int i = 2; i < 3; i++) {
+                            anterior = this.taulell[i - 1][j - 1];
+                            actual = this.taulell[i][j];
+                            if (actual == '#') {
+                                break;
+                            } else if (anterior != actual) {
+                                contador++;
+                                break;
+                            } else {
+                                guanyador = 1;
+                            }
+                        }
+                    }
                 }
             }
         }
 
         if (guanyador == 1) {
-            return 1;
+            return guanyador;
         }
         //else if (guanyador == 2){
-            //return 2;
+        //return guanyador;
         //}
         else {
-            return 0;
+            return guanyador;
         }
     }
 }

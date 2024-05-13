@@ -39,7 +39,7 @@ public class Main {
             do {
                 TUI.mostrarTaulell(joc);
                 coordscorrect = joc.jugar((short) tui.recollirJugada(), (short) tui.recollirJugada());
-                //Joc.jugadaGuanyadora();
+                //guanyador = Joc.jugadaGuanyadora();
             }
             while (coordscorrect);
 

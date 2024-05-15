@@ -86,9 +86,8 @@ public class Joc {
 
             if (guanyador != 1) {
 
-                for (int j = 0; j < 3; j++) {
-                    for (int i = 1; i < 3; i++) {
-                        j++;
+                for (int j = 2; j > 0; j--) {
+                    for (int i = 2; i > 0; i--) {
                         anterior = this.taulell[i - 1][j - 1];
                         actual = this.taulell[i][j];
                         if (actual == '#' || anterior == '#') {
@@ -125,7 +124,6 @@ public class Joc {
                 }
             }
         }
-
         return guanyador;
     }
 }

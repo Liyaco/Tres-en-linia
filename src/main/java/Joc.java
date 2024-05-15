@@ -41,14 +41,12 @@ public class Joc {
     }
 
     // El metode jugadaGuanyadora es l'encarregat de trobar la jugada guanyadora //
-    public int[] jugadaGuanyadora() {
+    public int jugadaGuanyadora() {
         int guanyador;
-        int jugador;
         char anterior;
         char actual;
 
         guanyador = 2;
-        jugador = 1;
 
         for (int j = 0; j < 3; j++) {
             for (int i = 1; i < 3; i++) {
@@ -122,10 +120,6 @@ public class Joc {
                 }
             }
         }
-        if (guanyador != 1) {
-            jugador++;
-        }
-
-        return new int[]{guanyador, jugador};
+        return guanyador;
     }
 }

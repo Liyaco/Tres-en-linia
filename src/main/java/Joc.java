@@ -2,9 +2,7 @@
 public class Joc {
     private short torn;
 
-    public short getTorn() {
-        return torn;
-    }
+    //public short getTorn() { return torn; }
 
     // Creacio de un array, sera el taulell //
     private char[][] taulell;
@@ -43,88 +41,84 @@ public class Joc {
     }
 
     // El metode jugadaGuanyadora es l'encarregat de trobar la jugada guanyadora //
-    public int jugadaGuanyadora(char anterior, char actual, int guanyador, int jugador, int contador) {
+    public int jugadaGuanyadora() {
+        int guanyador;
+        char anterior;
+        char actual;
 
         guanyador = 2;
-
-        jugador = 1;
-
-        contador = 0;
 
         for (int j = 0; j < 3; j++) {
             for (int i = 1; i < 3; i++) {
                 anterior = this.taulell[i - 1][j];
                 actual = this.taulell[i][j];
-                if (actual == '#') {
+                if (actual == '#' || anterior == '#') {
                     break;
-                } else if (anterior != actual) {
-                    contador++;
-                    break;
-                } else {
+                }
+                else if (anterior == actual) {
                     guanyador = 1;
+                }
+                else {
+                    guanyador = 2;
+                    break;
                 }
             }
         }
 
         if (guanyador != 1) {
 
-            guanyador = 2;
-
-            contador = 0;
-
             for (int j = 1; j < 3; j++) {
                 for (int i = 0; i < 3; i++) {
                     anterior = this.taulell[i][j - 1];
                     actual = this.taulell[i][j];
-                    if (actual == '#') {
+                    if (actual == '#' || anterior == '#') {
                         break;
-                    } else if (anterior != actual) {
-                        contador++;
-                        break;
-                    } else {
+                    }
+                    else if (anterior == actual) {
                         guanyador = 1;
+                    }
+                    else {
+                        guanyador = 2;
+                        break;
                     }
                 }
             }
 
             if (guanyador != 1) {
 
-                guanyador = 2;
-
-                contador = 0;
-
                 for (int j = 0; j < 3; j++) {
-                    for (int i = 0; i < 3; i++) {
-                        anterior = this.taulell[i + 1][j + 1];
+                    for (int i = 1; i < 3; i++) {
+                        j++;
+                        anterior = this.taulell[i - 1][j - 1];
                         actual = this.taulell[i][j];
-                        if (actual == '#') {
+                        if (actual == '#' || anterior == '#') {
                             break;
-                        } else if (anterior != actual) {
-                            contador++;
-                            break;
-                        } else {
+                        }
+                        else if (anterior == actual) {
                             guanyador = 1;
+                        }
+                        else {
+                            guanyador = 2;
+                            break;
                         }
                     }
                 }
 
                 if (guanyador != 1) {
 
-                    guanyador = 2;
-
-                    contador = 0;
-
-                    for (int j = 2; j < 3; j++) {
-                        for (int i = 2; i < 3; i++) {
-                            anterior = this.taulell[i - 1][j - 1];
-                            actual = this.taulell[i][j];
-                            if (actual == '#') {
+                    for (int j = 1; j < 3; j++) {
+                        for (int i = 2; i > 0; i--) {
+                            anterior = this.taulell[i][j - 1];
+                            actual = this.taulell[i - 1][j];
+                            if (actual == '#' || anterior == '#') {
                                 break;
-                            } else if (anterior != actual) {
-                                contador++;
-                                break;
-                            } else {
+                            }
+                            else if (anterior == actual) {
                                 guanyador = 1;
+                            }
+                            else {
+                                guanyador = 2;
+                                break;
                             }
                         }
                     }
@@ -132,14 +126,6 @@ public class Joc {
             }
         }
 
-        if (guanyador == 1) {
-            return guanyador;
-        }
-        //else if (guanyador == 2){
-        //return guanyador;
-        //}
-        else {
-            return guanyador;
-        }
+        return guanyador;
     }
 }

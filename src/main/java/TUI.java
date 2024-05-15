@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 // La clase TUI //
@@ -7,17 +6,17 @@ public class TUI {
 
     // El metode mostrarMenu es l'encarregat de mostrar el menu del joc //
     public int mostrarMenu() {
-            int menuv = 4;
-            System.out.println("-------------------" +
-                    "\n1-Nova partida    |" +
-                    "\n-------------------\n" +
-                    "2-Carregar partida|\n" +
-                    "-------------------\n" +
-                    "3-Configuració    |\n" +
-
-                    "-------------------\n" +
-                    "4-Sortir          |\n" +
-                    "-------------------");
+            int menuv;
+            System.out.println("""
+                    -------------------
+                    1-Nova partida    |
+                    -------------------
+                    2-Carregar partida|
+                    -------------------
+                    3-Configuració    |
+                    -------------------
+                    4-Sortir          |
+                    -------------------""");
             System.out.print("Selecciona l'opció que vols: ");
             menuv = sc.nextInt();
             return menuv;
@@ -37,9 +36,7 @@ public class TUI {
     }
 
     // El metode fiDePartida es l'encarregat de acabar la partida quan es guanya //
-    public static void fiDePartida(){
-        System.out.println("1-Volver a jugar \n 2-Sortir");
-    }
+    //public static void fiDePartida(){ System.out.println("1-Volver a jugar \n 2-Sortir"); }
 
     public void configuracio() {
         System.out.println("|1.X en raya \n" +

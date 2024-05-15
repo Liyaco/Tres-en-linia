@@ -27,7 +27,7 @@ public class Main {
                 sortir = true;
                 break;
             default:
-                throw new IllegalStateException("No si esperaba el valor:" + menuv);
+                throw new IllegalStateException(STR."No si esperaba el valor:\{menuv}");
         }
         }
     }
@@ -39,7 +39,7 @@ public class Main {
             do {
                 TUI.mostrarTaulell(joc);
                 coordscorrect = joc.jugar((short) tui.recollirJugada(), (short) tui.recollirJugada());
-                //guanyador = Joc.jugadaGuanyadora();
+                guanyador = joc.jugadaGuanyadora();
             }
             while (coordscorrect);
 

@@ -42,9 +42,6 @@ public class TUI {
             System.out.println("Has guanyat!");
         }
         else if (jugador == 2) {
-            System.out.println("Has perdut!");
-        }
-        else {
             System.out.println("Empat");
         }
     }

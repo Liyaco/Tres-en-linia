@@ -34,8 +34,8 @@ public class Main {
     // play game es usa per a poder trucar desde el main els diferents metodes de Joc i TUI
     private static void play_game(Joc joc, TUI tui){
         boolean coordscorrect;
-        int guanyador = 3;
-        while (guanyador != 0){
+        int guanyador = 0;
+        while (guanyador == 0){
             do {
                 TUI.mostrarTaulell(joc);
                 coordscorrect = joc.jugar((short) tui.recollirJugada(), (short) tui.recollirJugada());
@@ -44,6 +44,7 @@ public class Main {
             while (coordscorrect);
 
         }
+        TUI.fiDePartida();
     }
 
     // El metode carregarPartida es l'encarregat de carregar una partida ja existent //

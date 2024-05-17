@@ -44,7 +44,7 @@ public class Main {
             while (coordscorrect);
 
         }
-        TUI.fiDePartida();
+        TUI.fiDePartida(joc);
     }
 
     // El metode carregarPartida es l'encarregat de carregar una partida ja existent //

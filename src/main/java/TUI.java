@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 // La clase TUI //
 public class TUI {
+
+    Joc joc = new Joc();
     Scanner sc = new Scanner(System.in);
 
     // El metode mostrarMenu es l'encarregat de mostrar el menu del joc //
@@ -36,12 +38,15 @@ public class TUI {
     }
 
     // El metode fiDePartida es l'encarregat de acabar la partida quan es guanya //
-    public static void fiDePartida(){
+    public static void fiDePartida(Joc joc){
 
-        if (jugador == 1) {
+        if (== 1) {
             System.out.println("Has guanyat!");
         }
-        else if (jugador == 2) {
+        else if (jugador == 0) {
+            System.out.println("Ha guanyat el jugador 2");
+        }
+        else if (joc.jugadaGuanyadora() == 2){
             System.out.println("Empat");
         }
     }

@@ -36,13 +36,12 @@ public class TUI {
     }
 
     // El metode fiDePartida es l'encarregat de acabar la partida quan es guanya //
-    public static void fiDePartida(){
-
-        if (jugador == 1) {
-            System.out.println("Has guanyat!");
+    public static void fiDePartida(Joc joc, boolean empat){
+        if (joc.getTorn()%2 == 1) {
+            System.out.println("Has guanyat! jugador1");
         }
-        else if (jugador == 2) {
-            System.out.println("Empat");
+        else {
+            System.out.println("Has guanyat! jugador2");
         }
     }
 

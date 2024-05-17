@@ -4,6 +4,10 @@ public class Joc {
 
     //public short getTorn() { return torn; }
 
+    public short getTorn() {
+        return torn;
+    }
+
     // Creacio de un array, sera el taulell //
     private char[][] taulell;
 

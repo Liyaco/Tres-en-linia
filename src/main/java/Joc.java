@@ -45,12 +45,12 @@ public class Joc {
     }
 
     // El metode jugadaGuanyadora es l'encarregat de trobar la jugada guanyadora //
-    public int jugadaGuanyadora() {
-        int guanyador;
+    public boolean jugadaGuanyadora() {
+        boolean guanyador;
         char anterior;
         char actual;
 
-        guanyador = 2;
+        guanyador = false;
 
         for (int j = 0; j < 3; j++) {
             for (int i = 1; i < 3; i++) {
@@ -60,7 +60,7 @@ public class Joc {
                     break;
                 }
                 else if (anterior == actual) {
-                    guanyador = 1;
+                    guanyador = true;
                 }
                 else {
                     break;
@@ -68,7 +68,7 @@ public class Joc {
             }
         }
 
-        if (guanyador != 1) {
+        if (!guanyador) {
 
             for (int j = 1; j < 3; j++) {
                 for (int i = 0; i < 3; i++) {
@@ -78,7 +78,7 @@ public class Joc {
                         break;
                     }
                     else if (anterior == actual) {
-                        guanyador = 1;
+                        guanyador = true;
                     }
                     else {
                         break;
@@ -86,7 +86,7 @@ public class Joc {
                 }
             }
 
-            if (guanyador != 1) {
+            if (!guanyador) {
 
                 for (int j = 2; j > 0; j--) {
                     for (int i = 2; i > 0; i--) {
@@ -96,7 +96,7 @@ public class Joc {
                             break;
                         }
                         else if (anterior == actual) {
-                            guanyador = 1;
+                            guanyador = true;
                         }
                         else {
                             break;
@@ -104,7 +104,7 @@ public class Joc {
                     }
                 }
 
-                if (guanyador != 1) {
+                if (!guanyador) {
 
                     for (int j = 1; j < 3; j++) {
                         for (int i = 2; i > 0; i--) {
@@ -114,7 +114,7 @@ public class Joc {
                                 break;
                             }
                             else if (anterior == actual) {
-                                guanyador = 1;
+                                guanyador = true;
                             }
                             else {
                                 break;

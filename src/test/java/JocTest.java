@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 
 class JocTest {
-
+    // Codi que crea i comprova si el taulell s'hi ha fet de forma satisfactoria
     @Test
     void creacion () {
         Joc joc = new Joc();
@@ -18,7 +18,7 @@ class JocTest {
         };
         Assertions.assertArrayEquals(taulell, joc.getTaulell());
     }
-
+    //Codi on es proba si el taulell es crea 'buit' encara que s'hi ha de crear amb '#'
     @Test
     void nocreacion() {
         Joc joc = new Joc();
@@ -30,7 +30,7 @@ class JocTest {
         };
         Assertions.assertNotEquals(taulell, joc.getTaulell());
     }
-
+    // Codi on es proba la primera jugada en tots els espais possibles
     @ParameterizedTest
     @CsvSource(
             {"0,0",
@@ -46,9 +46,9 @@ class JocTest {
     void jugada (short x , short y) {
         Joc joc = new Joc();
         joc.novaPartida();
-        Assertions.assertTrue(joc.jugar(x,y));
+        Assertions.assertTrue(joc.jugar(x, y));
     }
-
+    // Codi comprovant de una jugada guanyadora segons el taulell designat
     @ParameterizedTest
     @CsvSource(
             {"0,0",

@@ -54,11 +54,12 @@ public class TUI {
         int confmenu = sc.nextInt();
         switch (confmenu){
             case 1:
-                File f = new File("./","config");
+                File f = new File("../src","config.txt");
                 FileWriter fw = new FileWriter(f);
                 f.createNewFile();
                 System.out.println("seleccióna un numero del 1 al 10");
-                fw.write(sc.nextInt());
+                fw.write(sc.next());
+                fw.close();
                 break;
             case 2:
                 System.out.println("Sortint...");

@@ -1,6 +1,8 @@
+import java.io.IOException;
+
 // La clase Main //
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         // Aqui esta el switch i els seus atributs per poder funcionar, tambe crida al metode mostrar menu //
         boolean sortir = false;

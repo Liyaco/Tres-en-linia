@@ -1,3 +1,6 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 // La clase TUI //
@@ -45,13 +48,17 @@ public class TUI {
         }
     }
 
-    public void configuracio() {
+    public void configuracio() throws IOException {
         System.out.println("|1.X en raya \n" +
                 "|2.Sotir al menú");
         int confmenu = sc.nextInt();
         switch (confmenu){
             case 1:
-                System.out.println("seleccióna un numero");
+                File f = new File("./","config");
+                FileWriter fw = new FileWriter(f);
+                f.createNewFile();
+                System.out.println("seleccióna un numero del 1 al 10");
+                fw.write(sc.nextInt());
                 break;
             case 2:
                 System.out.println("Sortint...");

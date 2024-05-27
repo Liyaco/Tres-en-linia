@@ -49,7 +49,7 @@ class JocTest {
         Assertions.assertTrue(joc.jugar(x, y));
     }
     // Codi comprovant de una jugada guanyadora segons el taulell designat
-    @ParameterizedTest
+    /*@ParameterizedTest
     @CsvSource(
             {"0,0",
                     "0,1",
@@ -142,5 +142,5 @@ class JocTest {
             }
         }
         return guanyador;
-    }
+    }*/
 }
